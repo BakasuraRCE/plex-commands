@@ -97,14 +97,14 @@ def Shutdown(sender):
 	if OS == 'Windows':
 		Log(os.system('shutdown -s'))
 	else:
-		Log(commands.getoutput('shutdown -h now'))
+		Log(commands.getoutput('sudo shutdown -h now'))
 	return MessageContainer("Shutdown", L('LogShutdown'))
 
 def Reboot(sender):
 	if OS == 'Windows':
 		Log(os.system('shutdown -r'))
 	else:
-		Log(commands.getoutput('shutdown -r -h now'))
+		Log(commands.getoutput('sudo shutdown -r -h now'))
 		
 	return MessageContainer("Reboot", L('LogReboot'))
 
