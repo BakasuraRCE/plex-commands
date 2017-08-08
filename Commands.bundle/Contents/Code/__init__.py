@@ -112,7 +112,7 @@ def Hibernate(sender):
 	if OS == 'Windows':
 		Log(os.system('shutdown -h'))
 	else:
-		Log(commands.getoutput('pm-hibernate'))
+		Log(commands.getoutput('sudo pm-hibernate'))
 
 	return MessageContainer("Hibernate", L('LogHibernate'))
 
@@ -120,7 +120,7 @@ def Suspend(sender):
 	if OS == 'Windows':
 		Log(os.system('shutdown -h'))
 	else:
-		Log(commands.getoutput('pm-suspend'))
+		Log(commands.getoutput('sudo pm-suspend'))
 
 	return MessageContainer("Suspend", L('LogSuspend'))
 
