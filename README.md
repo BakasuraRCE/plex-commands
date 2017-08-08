@@ -24,13 +24,11 @@ Download and extract the folder *Commands.bundle* to:
 * **Linux**: /var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-ins
 * **Mac OS X**: /Applications/Plex Media Server.app/Contents/Resources/Plug-ins
 
-The user that runs Plex Media Server need rights to execute this commands. The easiest (but [not the most suitable for 
-all users](http://www.techrepublic.com/blog/linux-and-open-source/quick-introduction-to-suid-what-you-need-to-know/)) 
-method in Linux and Mac OS X is to *setuid* some executables with the following command:
+The user that runs Plex Media Server need rights to execute this commands. The easiest method in Linux and Mac OS X is [manager permissions with sudo](https://wiki.archlinux.org/index.php/pm-utils#User_permission_method):
  
-```sudo chmod s+u /sbin/shutdown```
+```plex ALL = NOPASSWD: /sbin/shutdown -h now,/sbin/shutdown -r -h now,/usr/sbin/pm-hibernate,/usr/sbin/pm-suspend```
 
-The user and group in Linux are *plex:plex* (daemon) but in Mac OS X the user is the one that is validated.  
+The user and group in Linux are *plex:plex* (daemon) but in Mac OS X the user is the one that is validated.
 
 TO-DO
 -----
