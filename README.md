@@ -15,6 +15,7 @@ Requirements
 ------------
 
 * Plex Media Server 0.9 or higher
+* sudo in Linux and Mac OS X
 
 Install
 -------
