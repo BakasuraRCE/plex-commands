@@ -25,7 +25,7 @@ Download and extract the folder *Commands.bundle* to:
 * **Linux**: /var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-ins
 * **Mac OS X**: /Applications/Plex Media Server.app/Contents/Resources/Plug-ins
 
-The user that runs Plex Media Server need rights to execute this commands. The easiest method in Linux and Mac OS X is [manager permissions with sudo](https://wiki.archlinux.org/index.php/pm-utils#User_permission_method):
+The user that runs Plex Media Server need rights to execute this commands. The easiest method in Linux and Mac OS X is [manage permissions with sudo](https://wiki.archlinux.org/index.php/pm-utils#User_permission_method):
  
 ```plex ALL = NOPASSWD: /sbin/shutdown -h now,/sbin/shutdown -r -h now,/usr/sbin/pm-hibernate,/usr/sbin/pm-suspend```
 
